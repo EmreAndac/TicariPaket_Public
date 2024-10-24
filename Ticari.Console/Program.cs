@@ -4,7 +4,6 @@ using System;
 using Ticari.BL.Managers.Concrete;
 using Ticari.Entities.DbContexts;
 using Ticari.Entities.Entities.Concrete;
-
 namespace Ticari.TestConsole
 {
     internal class Program
@@ -55,7 +54,8 @@ namespace Ticari.TestConsole
             Manager<Role> roleManager= new Manager<Role>();
             Role role = new Role() { RoleAdi="user" , CreateDate = DateTime.Now };
             role.Users = new List<MyUser>() { user };
-                roleManager.Create(role);   
+                
+            roleManager.Create(role);   
 
 
         }

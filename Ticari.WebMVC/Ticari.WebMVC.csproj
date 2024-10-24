@@ -7,9 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AspNetCoreHero.ToastNotification" Version="1.1.0" />
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Ticari.BL\Ticari.BL.csproj" />
-    <ProjectReference Include="..\Ticari.Console\Ticari.TestConsole.csproj" />
-    <ProjectReference Include="..\Ticari.Entites\Ticari.Entities.csproj" />
   </ItemGroup>
 
 </Project>
