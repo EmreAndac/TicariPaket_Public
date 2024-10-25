@@ -45,6 +45,14 @@ namespace Ticari.WebMVC
 
             app.UseAuthorization();
 
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                  name: "areas",
+                  pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                );
+            });
+
             app.MapControllerRoute(
 
                 name: "default",
@@ -52,6 +60,8 @@ namespace Ticari.WebMVC
                 );
 
             app.Run();
+
+            string str = "https://we.tl/t-iBtAiQQWup";
         }
     }
 }

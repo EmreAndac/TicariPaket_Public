@@ -70,7 +70,7 @@ namespace Ticari.WebMVC.Controllers
 
             // userManager.Create(insertVM);
 
-            return RedirectToAction("Index", "Account");
+            return RedirectToAction("Index", "Account", new {Area="Admin"});
            
         }
     }
